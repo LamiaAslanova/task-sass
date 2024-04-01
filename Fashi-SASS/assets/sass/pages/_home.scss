@@ -1,0 +1,370 @@
+@import "../base/typography";
+@import "../utils/mixins";
+@import "../utils/extends";
+@import "../utils/variables";
+
+
+
+main {
+    font-family: $fontFamily;
+
+    .sale {
+        height: 100vh;
+        background-image: url("https://preview.colorlib.com/theme/fashi/img/hero-1.jpg.webp");
+        @extend .backgroundParameters;
+        @include center(flex, 0, center);
+
+        &__div {
+            width: 75%;
+            margin: 0 auto;
+
+            &__description {
+                width: 41.6%;
+
+                span {
+                    @extend .miniTitle;
+                    color: $mainColor;
+                }
+
+                h1 {
+                    @extend .mainTitle;
+                    margin-bottom: 6px;
+                }
+
+                p {
+                    @extend .textFont;
+                    margin-bottom: 42px;
+                }
+
+                button {
+                    background-color: $mainColor;
+                    border: none;
+                    padding: 12px 30px;
+
+                    a {
+                        @extend .navText;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .banners {
+        padding: 80px 50px;
+
+        &__div {
+            @extend .centerDiv;
+            width: 93%;
+            margin: 0 auto;
+            gap: 30px;
+
+            &__item {
+                position: relative;
+                @extend .centerDiv;
+                width: 33.33333%;
+
+                img {
+                    width: 443px;
+                    height: 248px;
+                }
+
+                h4 {
+                    @extend .bannerTitle;
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+    .women {
+        @extend .centerDiv;
+        gap: 70px;
+
+        &__image {
+            width: 347.3px;
+            height: 620px;
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/products/women-large.jpg.webp");
+            @extend .backgroundParameters;
+            @extend .centerDiv;
+
+            &__title {
+                @include center (flex, center, center);
+                flex-direction: column;
+
+                h2 {
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: white;
+                    line-height: 1.2;
+                    margin-bottom: 18px;
+                }
+
+                a {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: white;
+                    line-height: 1.5;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &__clothes {
+            &__filter {
+                ul {
+                    @extend .centerDiv;
+                    gap: 22px;
+                    padding-bottom: 40px;
+
+                    a {
+                        color: #b2b2b2;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        text-decoration: none;
+                    }
+
+                    .clothings {
+                        color: black;
+                    }
+                }
+            }
+
+            &__varieties {
+                @extend .centerDiv;
+                gap: 25px;
+
+                i {
+                    font-size: 40px;
+                    color: #b2b2b2;
+                    margin-bottom: 100px;
+                }
+
+                .variety {
+                    @extend .centerDiv;
+                    flex-direction: column;
+
+                    img {
+                        padding-bottom: 26px;
+                    }
+
+                    span {
+                        @extend .miniTitle;
+                        color: #b2b2b2;
+                    }
+
+                    h5 {
+                        @extend .cardTitle;
+                        color: $primaryColor;
+                    }
+
+                    p {
+                        @extend .cardPrice;
+                    }
+                }
+            }
+        }
+    }
+
+    .deal {
+        @extend .centerDiv;
+        height: 100vh;
+
+        &__div {
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/time-bg.jpg.webp");
+            @extend .backgroundParameters;
+            width: 91%;
+            height: 82%;
+            @include center(flex, 0, center);
+
+            &__body {
+                @extend .centerDiv;
+                flex-direction: column;
+                width: 33%;
+                margin-left: 10%;
+
+                h2 {
+                    color: $primaryColor;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin-bottom: 38px;
+                }
+
+                p {
+                    @extend .textFont;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+
+                .price {
+                    @include center (flex, center, center);
+
+                    p {
+                        font-size: 24px;
+                        padding-right: 5px;
+                        line-height: 1.4;
+                        font-weight: 700;
+                        color: $mainColor;
+                    }
+
+                    span {
+                        @extend .textFont;
+                        padding-bottom: 8px;
+                    }
+                }
+                .countdown{
+                    @extend .centerDiv;
+                    gap: 30px;
+                    margin-top: 25px;
+                    &__item{
+                        padding: 14px 14px 11px 14px;
+                        @extend .centerDiv;
+                        flex-direction: column;
+                        background-color: white;
+                        border-radius: 6px;
+                        p{
+                            @extend .countNumber;
+                        }
+                        span{
+                            @extend .countFont;
+                        }
+                    }
+                }
+                button {
+                    background-color: $mainColor;
+                    border: none;
+                    padding: 12px 30px;
+                    margin-top: 50px;
+
+                    a {
+                        @extend .navText;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .men {
+        @extend .centerDiv;
+        gap: 70px;
+        padding-bottom: 80px;
+
+        &__image {
+            width: 347.3px;
+            height: 620px;
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/products/man-large.jpg.webp");
+            @extend .backgroundParameters;
+            @extend .centerDiv;
+
+            &__title {
+                @include center (flex, center, center);
+                flex-direction: column;
+
+                h2 {
+                    font-size: 48px;
+                    font-weight: 700;
+                    color: white;
+                    line-height: 1.2;
+                    margin-bottom: 18px;
+                }
+
+                a {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: white;
+                    line-height: 1.5;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &__clothes {
+            &__filter {
+                ul {
+                    @extend .centerDiv;
+                    gap: 22px;
+                    padding-bottom: 40px;
+
+                    a {
+                        color: #b2b2b2;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        text-decoration: none;
+                    }
+
+                    .clothings {
+                        color: black;
+                    }
+                }
+            }
+
+            &__varieties {
+                @extend .centerDiv;
+                gap: 25px;
+
+                i {
+                    font-size: 40px;
+                    color: #b2b2b2;
+                    margin-bottom: 100px;
+                }
+
+                .variety {
+                    @extend .centerDiv;
+                    flex-direction: column;
+
+                    img {
+                        padding-bottom: 26px;
+                    }
+
+                    span {
+                        @extend .miniTitle;
+                        color: #b2b2b2;
+                    }
+
+                    h5 {
+                        @extend .cardTitle;
+                        color: $primaryColor;
+                    }
+
+                    p {
+                        @extend .cardPrice;
+                    }
+                }
+            }
+        }
+    }
+
+    .models{
+        width: 100%;
+        @extend .centerDiv;
+        div{
+            width: 16.66666%;
+            height: 320px;
+            @extend .backgroundParameters;
+        }
+        .first{
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/insta-1.jpg.webp");
+        }
+        .second{
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/insta-2.jpg.webp");
+        }
+        .third{
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/insta-3.jpg.webp");
+        }
+        .fourth{
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/insta-4.jpg.webp");
+        }
+        .fifth{
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/insta-5.jpg.webp");
+        }
+        .sixth{
+            background-image: url("https://preview.colorlib.com/theme/fashi/img/insta-6.jpg.webp");
+        }
+    }
+
+}

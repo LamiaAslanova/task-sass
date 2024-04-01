@@ -1,0 +1,21 @@
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerTitle {
+    color: $primaryColor;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 11px 28px;
+    background-color: white;
+    border-radius: 2px;
+    line-height: 1.2;
+}
+
+.backgroundParameters {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}

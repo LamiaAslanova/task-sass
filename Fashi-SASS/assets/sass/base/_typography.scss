@@ -1,0 +1,70 @@
+@import "../utils/variables";
+
+$fontFamily: "Mulish";
+
+.miniText1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primaryColor;
+}
+
+.miniText2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primaryColor;
+}
+
+.navText {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+}
+
+.mainTitle {
+    color: $primaryColor;
+    font-size: 72px;
+    font-weight: 700px;
+    line-height: 1.2;
+}
+
+.miniTitle {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 28px;
+}
+
+.textFont {
+    font-size: 16px;
+    color: #636363;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.cardTitle{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.cardPrice{
+    font-size: 20px;
+    font-weight: 700;
+    color: $mainColor;
+    line-height: 1.5;
+}
+
+.countNumber{
+    font-size: 36px;
+    font-weight: 700;
+    color: $mainColor;
+}
+
+.countFont{
+    font-size: 16px;
+    color: #b2b2b2;
+    font-weight: 300;
+}
